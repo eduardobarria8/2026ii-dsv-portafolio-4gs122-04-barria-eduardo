@@ -1,39 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="utf-8">
-    <!-- file: docs/index.html -->
-    <!--
-      PÁGINA PERSONAL — portada del portafolio
-      ──────────────────────────────────────────────────────────────
-      Si ya hiciste tu perfil en el Laboratorio 1, trae aquí su
-      contenido. Las rutas de esta página ya están ajustadas al
-      portafolio; no copies las del laboratorio, que usaban ../../
-
-      Qué editar:
-        • El <title>, el <link> a tu hoja de estilos y la descripción.
-        • Nombre, tagline y todos los marcadores con la forma {{TEXTO}}.
-        • Las cuatro rutas de la fotografía (src y srcset).
-      Qué NO cambiar:
-        • Estructura (header / aside / main / footer).
-        • El enlace "Mis entregas" (./modulos/index.html).
-        • Rutas a los logos institucionales (./assets/img/).
-
-      Nombres de archivo, si te llamas Juan Pérez:
-        assets/css/about-perez-juan.css
-        assets/img/foto-perez-juan-{160,320,480,640}.webp
-      Borra este comentario cuando termines.
-    -->
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Nombre Apellidos — Perfil</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Eduardo Barría — Perfil</title>
 
     <!-- CSS específico de esta página -->
-    <link rel="stylesheet" href="./assets/css/about-apellidos-nombre.css">
+    <link rel="stylesheet" href="./assets/css/about-barria-eduardo.css" />
 
     <!-- Descripción breve (práctica de metadatos/SEO) -->
     <meta
       name="description"
-      content="Perfil de estudiante — Licenciatura en Desarrollo y Gestión de Software (UTP FISC Veraguas)">
+      content="Perfil de estudiante — Licenciatura en Desarrollo y Gestión de Software (UTP FISC Veraguas)"
+    />
   </head>
   <body>
     <!-- Contenedor principal (layout en Grid definido en el CSS) -->
@@ -43,28 +22,30 @@
           <!-- Navegación mínima (breadcrumb). Puedes añadir más tabs si el profe lo pide -->
           <div class="top-actions">
             <nav class="tabs-left" aria-label="Navegación">
-              <a href="./modulos/index.html" class="tab-link is-active">
+              <a href="../../index.html" class="tab-link is-active">
                 <span class="ico" aria-hidden="true">&#8962;</span>
-                <span class="label">Mis entregas</span>
+                <span class="label">Inicio</span>
               </a>
             </nav>
           </div>
 
           <!-- EDITA: nombre y tagline -->
-          <h1 class="nombre">Nombre Apellidos</h1>
-          <p class="tagline">Estudiante de Desarrollo de Software · {{GRUPO}}-{{NN}}</p>
+          <h1 class="nombre">Eduardo Barría</h1>
+          <p class="tagline">Licenciatura en Desarrollo y Gestión de Software</p>
         </div>
 
         <!-- Logos institucionales (no cambiar rutas) -->
         <div class="logos">
           <img
             class="logo"
-            src="./assets/img/logo-utp.svg"
-            alt="Logo UTP">
+            src="C:\DSV_GIT_Practicas\2026ii-dsv-portafolio-4gs122-04-barria-eduardo\docs\assets\img\logo-utp.svg"
+            alt="Logo UTP"
+          />
           <img
             class="logo"
-            src="./assets/img/logo-fisc.svg"
-            alt="Logo FISC">
+            src="C:\DSV_GIT_Practicas\2026ii-dsv-portafolio-4gs122-04-barria-eduardo\docs\assets\img\logo-fisc.svg"
+            alt="Logo FISC"
+          />
         </div>
       </header>
 
@@ -72,19 +53,20 @@
       <aside class="sidebar">
         <figure class="perfil">
           <img
-            src="./assets/img/foto-apellidos-nombre-480.webp"
+            src="./assets/img/foto-barria-eduardo-480.webp"
             srcset="
-              ./assets/img/foto-apellidos-nombre-160.webp 160w,
-              ./assets/img/foto-apellidos-nombre-320.webp 320w,
-              ./assets/img/foto-apellidos-nombre-480.webp 480w,
-              ./assets/img/foto-apellidos-nombre-640.webp 640w
+              ./assets/img/foto-barria-eduardo-160.jpg 160w,
+              ./assets/img/foto-barria-eduardo-320.jpg 320w,
+              ./assets/img/foto-barria-eduardo-480.jpg 480w,
+              ./assets/img/foto-barria-eduardo-640.jpg 640w
             "
             sizes="(max-width: 700px) 128px, 160px"
-            alt="Nombre Apellidos, estudiante de LDGS UTP FISC Veraguas"
+            alt="Eduardo Barría, estudiante de LDGS UTP FISC Veraguas"
             width="160"
             height="160"
             loading="lazy"
-            decoding="async">
+            decoding="async"
+          />
           <figcaption>
             Licenciatura en Desarrollo y Gestión de Software
           </figcaption>
@@ -94,16 +76,16 @@
           <h2>Contacto</h2>
           <ul class="lista-contacto">
             <li>
-              <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>
+              <a href="mailto:eduardo.barria3@utp.ac.pa">eduardo.barria3@utp.ac.pa</a>
             </li>
             <li>
-              <a target="_blank" rel="noopener noreferrer" href="{{LINKEDIN}}">LinkedIn</a>
+              <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/eduardo-barría-a760b2441/?isSelfProfile=true">LinkedIn</a>
             </li>
             <li>
-              <a target="_blank" rel="noopener noreferrer" href="{{GITHUB}}">GitHub</a>
+              <a target="_blank" rel="noopener" href="https://github.com/eduardobarria8">GitHub</a>
             </li>
             <li>
-              <a href="./modulos/index.html">Mis entregas del curso</a>
+              <a target="_blank" rel="noopener" href="{{PORTAFOLIO}}">Portafolio</a>
             </li>
           </ul>
         </section>
@@ -115,14 +97,12 @@
           <h3>Lenguajes</h3>
           <div class="chips">
             <span class="chip">Java</span>
-            <span class="chip">JavaScript</span>
             <span class="chip">Python</span>
             <span class="chip">SQL</span>
           </div>
 
           <h3>Frameworks & Librerías</h3>
           <div class="chips">
-            <span class="chip">Spring Boot</span>
             <span class="chip">React</span>
             <span class="chip">Node.js</span>
           </div>
@@ -136,14 +116,13 @@
           <h3>Herramientas</h3>
           <div class="chips">
             <span class="chip">Git</span>
-            <span class="chip">Docker</span>
-            <span class="chip">Postman</span>
             <span class="chip">Figma</span>
+            <span class="chip">Visual Studio</span>
+            <span class="chip">GitHub</span>
           </div>
 
           <h3>Metodologías</h3>
           <div class="chips">
-            <span class="chip">Scrum</span>
             <span class="chip">Kanban</span>
           </div>
         </section>
@@ -153,28 +132,17 @@
       <main class="contenido">
         <section class="resumen card">
           <h2>Acerca de mí</h2>
-          <p>{{RESUMEN_BREVE_ELEVATOR_PITCH}}</p>
+          <p>Soy estudiante de la Licenciatura en Desarrollo y Gestión de
+             Software en la UTP, FISC, Centro Regional de Veraguas. 
+             Me interesa el desarrollo de software y la creación de aplicaciones completas, 
+             con especial interés en el backend con Java y el desarrollo de interfaces web. 
+             Actualmente estoy fortaleciendo mis conocimientos en Java, C#, SQL, Git, HTML,
+             CSS y JavaScript, y explorando tecnologías como Spring, React y Node.js.
+             Me gusta aprender mediante proyectos prácticos, aplicar buenas prácticas de programación 
+             y control de versiones, y seguir desarrollándome profesionalmente para participar 
+             en proyectos reales de software.</p>
         </section>
-
-        <!-- Duplica <article.proyecto> por cada proyecto -->
-        <section class="proyectos card">
-          <h2>Proyectos destacados</h2>
-          <div class="proyectos-flex">
-            <article class="proyecto">
-              <header class="proyecto-head">
-                <h3>{{NOMBRE_PROYECTO}}</h3>
-                <div class="proyecto-links">
-                  <a target="_blank" rel="noopener noreferrer" href="{{URL_GITHUB}}">Código</a>
-                  <a target="_blank" rel="noopener noreferrer" href="{{URL_DEMO}}">Demo</a>
-                </div>
-              </header>
-              <p>{{DESCRIPCION_PROYECTO}}</p>
-              <p class="rol"><strong>Rol:</strong> {{ROL}}</p>
-              <p class="tech"><strong>Tecnologías:</strong> {{TECNOLOGIAS}}</p>
-            </article>
-          </div>
-        </section>
-
+<!--
         <section class="experiencia card">
           <h2>Experiencia</h2>
           <ul class="timeline">
@@ -187,17 +155,17 @@
             </li>
           </ul>
         </section>
-
+-->
         <section class="educacion card">
           <h2>Educación</h2>
           <ul class="listado-simple">
             <li>
               <strong>Licenciatura en Desarrollo y Gestión de Software</strong>
-              — UTP, Centro Regional de Veraguas ({{ANIO_INICIO}}–{{ANIO_FIN}})
+              — UTP, Centro Regional de Veraguas (2025–2028)
             </li>
           </ul>
         </section>
-
+<!--
         <section class="certificaciones card">
           <h2>Certificaciones y Cursos</h2>
           <ul class="listado-simple">
@@ -213,7 +181,7 @@
           </ul>
         </section>
       </main>
-
+    -->
       <footer class="footer">
         <small>
           © 2026 Universidad Tecnológica de Panamá · Centro Regional de Veraguas
